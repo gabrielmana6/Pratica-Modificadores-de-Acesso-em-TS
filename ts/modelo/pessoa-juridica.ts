@@ -4,6 +4,7 @@ class PessoaJuridica extends Pessoa{
 
     constructor(nome: string, idade: number, dataNascimento: Date, cnpj: string) {
         super(nome, idade, dataNascimento);
+        nome = nome + ' - Jurídica';
         this._cnpj = cnpj;
     }
 
