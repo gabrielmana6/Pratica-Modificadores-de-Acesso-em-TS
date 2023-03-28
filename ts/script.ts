@@ -36,8 +36,17 @@ contaBonificada.creditar(10);
 // console.log(c2.saldo)
 
 
-const dateString: string = '03/10/1998';
-const dateParts: string[] = dateString.split('/');
-const myDate: Date = new Date(parseInt(dateParts[2]), parseInt(dateParts[1]) - 1, parseInt(dateParts[0]));
+//const dateString: string = '03/10/1998';
+//const dateParts: string[] = dateString.split('/');
+//const myDate: Date = new Date(parseInt(dateParts[2]), parseInt(dateParts[1]) - 1, parseInt(dateParts[0]));
 
-let pessoa = new Pessoa('Gabriel', 23, myDate);
+const myDate = new Date();
+let pessoa = new Pessoa('Gabriel1', 24, myDate);
+
+console.log(pessoa);
+
+let pessoaFisica = new PessoaFisica('Gabriel2', 24, myDate);
+console.log(pessoaFisica);
+
+let pessoaJuridica = new PessoaJuridica('Gabriel3', 24, myDate);
+console.log(pessoaJuridica);
